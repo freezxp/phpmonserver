@@ -18,8 +18,8 @@ RUN set -x \
 	&& cd /tmp \
 	#&& wget $PHPMONITOR_URL \ 
 	&& wget https://sourceforge.net/projects/phpservermon/files/phpservermon/phpservermon-3.2.0.tar.gz \
-	&& mv download phpmonitor.tar.gz \
-	&& tar -xvf phpmonitor.tar.gz --strip-components=1 \
+	#&& mv phpservermon-3.2.0.tar.gz phpmonitor.tar.gz \
+	&& tar -xvf phpservermon-3.2.0.tar.gz --strip-components=1 \
 	&& cd phpservermon-3.2.0 \
 	&& mv * /var/www/html \ 
 	&& cd /var/www/html \
