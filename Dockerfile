@@ -2,7 +2,7 @@ FROM eboraas/apache
 MAINTAINER Ed Boraas <ed@boraas.ca>
 
 RUN apt-get update && apt-get -y install php php-mysql curl wget php-curl && apt-get clean && rm -rf /var/lib/apt/lists/*
-RUN /usr/sbin/a2dismod 'mpm_*' && /usr/sbin/a2enmod mpm_prefork
+#RUN /usr/sbin/a2dismod 'mpm_*' && /usr/sbin/a2enmod mpm_prefork
 
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
